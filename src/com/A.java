@@ -9,7 +9,9 @@ class Account {
     }
 
     public void setBalance(double balance) {
-        this.balance += balance;
+        for (int i = 0; i < 10000; i++) {
+            this.balance++;
+        }
     }
 }
 
@@ -21,16 +23,15 @@ public class A {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
-                account.setBalance(2000);
+                account.setBalance(2000);               
             }
         });
-        
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println(account.getBalance());
             }
-        });        
+        });
         t.start();
         t1.start();
     }
