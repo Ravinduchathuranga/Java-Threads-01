@@ -1,5 +1,5 @@
-Synchronized Methods
-The Java programming language provides two basic synchronization idioms: synchronized methods and synchronized statements. The more complex of the two, synchronized statements, are described in the next section. This section is about synchronized methods.
+# Synchronized Methods
+* The Java programming language provides two basic synchronization idioms: synchronized methods and synchronized statements. The more complex of the two, synchronized statements, are described in the next section. This section is about synchronized methods.
 
 To make a method synchronized, simply add the synchronized keyword to its declaration:
 ```java
